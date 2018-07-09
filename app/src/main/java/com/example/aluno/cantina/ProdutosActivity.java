@@ -3,7 +3,7 @@ package com.example.aluno.cantina;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Produtos extends AppCompatActivity {
+public class ProdutosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

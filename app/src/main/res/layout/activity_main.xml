@@ -7,7 +7,7 @@
     tools:context="com.example.aluno.cantina.MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonProd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.702" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonQuem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="76dp"
