@@ -18,25 +18,31 @@ public class ProdutosActivity extends AppCompatActivity {
     SeekBar Nsalgado;
     SeekBar Nrefrigerante;
     TextView valorfinal;
-    EditText troco;
+    EditText trocovalor;
+    TextView N1;
+    TextView N2;
+
 
     int Qtdsalgado = 0;
     int Qtdrefrigerante = 0;
     Double ValorSalgado = 3.80;
     Double ValorRefri = 1.50;
     Double conta = 0.0;
-    Double valor
+    int qtdseekbar1 = 0;
+    int qtdseekbar2 = 0;
+    Double troco;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produtos);
 
-        valorfinal = (TextView) findViewById(R.id.textView4) ;
+        valorfinal = (TextView) findViewById(R.id.textView5) ;
         confirma = (Button) findViewById(R.id.button);
-        Nsalgado = (SeekBar)findViewById(R.id.seekBar);
-        Nrefrigerante = (SeekBar)findViewById(R.id.seekBar2);
-
-
+        Nsalgado = (SeekBar)findViewById(R.id.seekBar2);
+        Nrefrigerante = (SeekBar)findViewById(R.id.seekBar);
+        N1 = (TextView)findViewById(R.id.textView12);
+        N2 = (TextView)findViewById(R.id.textView14);
+        trocovalor  = (EditText)findViewById(R.id.editText);
 
 
        ;
@@ -48,6 +54,7 @@ public class ProdutosActivity extends AppCompatActivity {
                 Qtdsalgado = Nsalgado.getProgress();
                 Qtdrefrigerante = Nrefrigerante.getProgress();
                 conta = (Qtdrefrigerante*ValorRefri) + (ValorSalgado*Qtdsalgado);
+
 
 
                 valorfinal.setText(""+conta);
