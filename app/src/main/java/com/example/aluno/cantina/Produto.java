@@ -31,6 +31,11 @@ public class Produto extends SugarRecord{
     public void setValor(double valor) {
         this.valor = valor;
     }
+
+    @Override
+    public String toString(){
+        return nome + " valor: R$ " + valor;
+    }
 }
 
 
